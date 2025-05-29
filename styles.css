@@ -274,6 +274,25 @@ nav .middle a{
 
 
 @media (max-width: 850px) {
+    /* Navigation Bar */
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: var(--background-color);
+        padding: 0px;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+    
     /*Section 1*/
     .About-Me .text h2 {
         font-size: 35px;
