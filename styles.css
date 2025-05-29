@@ -17,6 +17,8 @@ html {
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--background-color);
+    margin: 0 auto;
+    max-width: 2000px;
 }
 
 a {
@@ -152,18 +154,18 @@ nav .right a span {
 }
 
 /* Section 3 */
-.eduction-section {
+.education-section {
     padding: 0 50px;
     margin-bottom: 100px;
 }
 
-.eduction-section h2 {
+.education-section h2 {
     text-align: center;
     font-size: 35px;
     margin-bottom: 30px;
 }
 
-.eduction-section .group {
+.education-section .group {
     display: flex;
     align-items: center;
     gap: 50px;
@@ -213,6 +215,57 @@ nav .right a span {
     flex: 8;
 }
 
+/* Section 4 */
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px
+}
+
+.contact-section .group form {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input, .contact-section .group form textarea {
+    font-family: 'Outfit', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover {
+    filter:brightness(.9);
+}
+
 
 @media (max-width: 850px) {
     /*Section 1*/
@@ -237,6 +290,11 @@ nav .right a span {
     }
 
     .education-section .group {
+        flex-direction: column;
+    }
+
+    /* Section 4 */
+    .contact-section .group {
         flex-direction: column;
     }
 }
@@ -277,5 +335,15 @@ nav .right a span {
 
     .skills-section .cells .cell span {
         font-size: 16px;
+    }
+
+    /* Section 3 */ 
+    .education-section {
+        padding: 0 20px;
+    }
+
+    /* Section 4 */
+    .contact-section {
+        padding: 0 20px;
     }
 }
