@@ -60,8 +60,7 @@ nav .right a span {
 
 nav .middle a{
     color: var(--text-color);
-    font-size: 22px;
-    font-weight: 400px;
+
     margin: 0 10px;
 }
 
