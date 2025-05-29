@@ -347,3 +347,32 @@ nav .right a span {
         padding: 0 20px;
     }
 }
+
+/* Rainbow cursor */
+.cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    background: white;
+    box-shadow: 0 0 20px 10px red;
+    animation: rainbow-glow 3s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes rainbow-glow {
+    0% { box-shadow: 0 0 20px 10px red; }
+    14% { box-shadow: 0 0 20px 10px orange; }
+    28% { box-shadow: 0 0 20px 10px yellow; }
+    42% { box-shadow: 0 0 20px 10px green; }
+    57% { box-shadow: 0 0 20px 10px blue; }
+    71% { box-shadow: 0 0 20px 10px indigo; }
+    85% { box-shadow: 0 0 20px 10px violet; }
+    100% { box-shadow: 0 0 20px 10px red; }
+}

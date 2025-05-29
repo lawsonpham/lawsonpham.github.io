@@ -197,5 +197,18 @@
         </section>
     </main>
 
+    <!--Rainbow Cursor-->
+     <script>
+        const glowCursor = document.createElement('div');
+        glowCursor.classList.add('cursor-glow');
+        document.body.appendChild(glowCursor);
+
+        document.addEventListener('mousemove', e => {
+            glowCursor.style.top = `${e.clientY}px`;
+            glowCursor.style.left = `${e.clientX}px`;
+        });
+    </script>
+
+
 </body>
 </html>
